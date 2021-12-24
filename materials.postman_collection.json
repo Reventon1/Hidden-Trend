@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "391d62c2-45a8-498f-8480-945bc36ce990",
+		"name": "materials",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "123",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "material add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "material_name",
+							"value": "Зараженный образец",
+							"type": "text"
+						},
+						{
+							"key": "material_info",
+							"value": "Плесень/Заражение/Противник",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/material/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"material",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "material edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "material_name",
+							"value": "Зараженный образец",
+							"type": "text"
+						},
+						{
+							"key": "material_info",
+							"value": "Плесень/Заражение/Противник",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/material/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"material",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "material id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/material/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"material",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "materials",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/materials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"materials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "material delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/material/1/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"material",
+						"1",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
